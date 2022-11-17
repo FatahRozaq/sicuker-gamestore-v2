@@ -2,11 +2,13 @@
 //
 
 #include<stdio.h>
+#include "wibu.h"
 
 int main()
 {
     printf("Hello World Bangdo");
     printf("godmode");
+    wibu();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
