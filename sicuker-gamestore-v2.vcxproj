@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="adit.c" />
     <ClCompile Include="fatah.c" />
     <ClCompile Include="main.c" />
   </ItemGroup>
