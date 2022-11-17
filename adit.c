@@ -1,5 +1,5 @@
 ﻿#include <stdio.h>
-#include "wibu.h"
+#include "header.h"
 void wibubawang() {
 	printf("bawang");
 	printf("bawanggoreng");

@@ -2,13 +2,13 @@
 //
 
 #include<stdio.h>
-#include "wibu.h"
+#include "header.h"
 
 int main()
 {
-    printf("Hello World Bangdo");
-    printf("godmode");
-    wibu();
+    tampilLogin();
+
+    //tampilLogin();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
