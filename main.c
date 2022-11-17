@@ -6,6 +6,7 @@
 int main()
 {
     printf("Hello World Bangdo");
+    printf("godmode");
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
