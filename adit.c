@@ -3,4 +3,5 @@
 void wibubawang() {
 	printf("bawang");
 	printf("bawanggoreng");
+	printf("bawanggoreng2");
 }
