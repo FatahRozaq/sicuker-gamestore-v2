@@ -2,4 +2,5 @@
 #include <stdio.h>
 
 void wibu();
+void wibubawang();
 #endif
