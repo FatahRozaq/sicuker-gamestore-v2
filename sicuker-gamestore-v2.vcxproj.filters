@@ -21,5 +21,8 @@
     <ClCompile Include="fatah.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="adit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
