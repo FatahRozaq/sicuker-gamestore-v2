@@ -127,8 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="adit.c" />
-    <ClCompile Include="fatah.c" />
+    <ClCompile Include="mainMenu.c" />
+    <ClCompile Include="layout.c" />
     <ClCompile Include="loginRegister.c" />
     <ClCompile Include="main.c" />
   </ItemGroup>

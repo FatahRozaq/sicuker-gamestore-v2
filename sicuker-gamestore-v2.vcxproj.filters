@@ -18,10 +18,10 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="fatah.c">
+    <ClCompile Include="layout.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="adit.c">
+    <ClCompile Include="mainMenu.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="loginRegister.c">
