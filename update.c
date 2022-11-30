@@ -213,22 +213,22 @@ void addGames(){
 	line(3);
 	
 	printf("|\tInput Game ID\t\t| ");
-	scanf_s(" %s", &dataGame.gameId);fflush(stdin);
+	scanf_s("%s", &dataGame.gameId);fflush(stdin);
 	
 	printf("|\tInput Game Name\t\t| ");
-	scanf_s(" %s", &dataGame.gameName);fflush(stdin);
+	scanf_s("%[^\n]s", &dataGame.gameName);fflush(stdin);
 	
 	printf("|\tInput Publisher\t\t| ");
-	scanf_s(" %s", &dataGame.publisher);fflush(stdin);
+	scanf_s("%[^\n]s", &dataGame.publisher);fflush(stdin);
 	
 	printf("|\tInput Genre\t\t| ");
-	scanf_s(" %s", &dataGame.genre);fflush(stdin);
+	scanf_s("%[^\n]s", &dataGame.genre);fflush(stdin);
 	
 	printf("|\tInput Price\t\t| ");
-	scanf_s(" %i", &dataGame.price);fflush(stdin);
+	scanf_s("%i", &dataGame.price);fflush(stdin);
 	
 	printf("|\tInput Description\t| ");
-	scanf_s(" %s", &dataGame.description);fflush(stdin);
+	scanf_s("%[^\n]s", &dataGame.description);fflush(stdin);
 	
 	fprintf(file, "%s_%s_%s_%s_%i_%s\n", dataGame.gameName, dataGame.gameId, dataGame.publisher, dataGame.genre, dataGame.price, dataGame.description);
 	
@@ -236,63 +236,63 @@ void addGames(){
 }
 
 void editGames(){
-	Game dataGame[50];
-	int index,i;
-	char id[50];
-		
-	printf("|\tInput Game ID to Edit \t| ");scanf("%s",id);fflush(stdin);
-	file=fopen("games.txt","r");
-	index=0;
-	while (!feof(file)){
-		fscanf(file,"%[^_]_%[^_]_%[^_]_%[^_]_%[^_]_%[^\n]\n",&dataGame[index].gameName,&dataGame[index].gameId,&dataGame[index].publisher,&dataGame[index].genre,&dataGame[index].price,&dataGame[index].description);
-		fflush(stdin);
-			if(id==dataGame[index].gameId){
-				printf("|\tInput Game Name\t| ");scanf("%[^\n]",&dataGame[index].gameName);fflush(stdin);
-//				printf("\t\t\t\tMasukkan ID Anda \t\t: ");scanf("%i",&dataGame[index].ID);fflush(stdin);
-//				printf("\t\t\t\tMasukkan No Telepon Anda \t: ");scanf("%s",&dataGame[index].Telp);fflush(stdin);
-//				printf("\t\t\t\tMasukkan Instagram Anda \t: ");scanf("%[^\n]",&dataGame[index].Instagram);fflush(stdin);
-		}
-		index++;
-	}
-	fclose(file);
-		file=fopen("games.txt","w");
-	fclose(file);
-		file=fopen("games.txt","a");
-	for(i=0;i<index;i++){
-		fprintf(file,"%s_%s_%s_%s_%i_%s\n",dataGame[i].gameName,dataGame[i].gameId,dataGame[i].publisher,dataGame[i].genre,dataGame[i].price,dataGame[i].description);
-	}
-	fclose(file);
+//	Game dataGame[50];
+//	int index,i;
+//	char id[50];
+//		
+//	printf("|\tInput Game ID to Edit \t| ");scanf("%s",id);fflush(stdin);
+//	file=fopen("games.txt","r");
+//	index=0;
+//	while (!feof(file)){
+//		fscanf(file,"%[^_]_%[^_]_%[^_]_%[^_]_%[^_]_%[^\n]\n",&dataGame[index].gameName,&dataGame[index].gameId,&dataGame[index].publisher,&dataGame[index].genre,&dataGame[index].price,&dataGame[index].description);
+//		fflush(stdin);
+//			if(id==dataGame[index].gameId){
+//				printf("|\tInput Game Name\t| ");scanf("%[^\n]",&dataGame[index].gameName);fflush(stdin);
+////				printf("\t\t\t\tMasukkan ID Anda \t\t: ");scanf("%i",&dataGame[index].ID);fflush(stdin);
+////				printf("\t\t\t\tMasukkan No Telepon Anda \t: ");scanf("%s",&dataGame[index].Telp);fflush(stdin);
+////				printf("\t\t\t\tMasukkan Instagram Anda \t: ");scanf("%[^\n]",&dataGame[index].Instagram);fflush(stdin);
+//		}
+//		index++;
+//	}
+//	fclose(file);
+//		file=fopen("games.txt","w");
+//	fclose(file);
+//		file=fopen("games.txt","a");
+//	for(i=0;i<index;i++){
+//		fprintf(file,"%s_%s_%s_%s_%i_%s\n",dataGame[i].gameName,dataGame[i].gameId,dataGame[i].publisher,dataGame[i].genre,dataGame[i].price,dataGame[i].description);
+//	}
+//	fclose(file);
 }
-
+//
 void deleteGames(){
-	
-	file=fopen("games.txt", "a+");
-	Game dataGame[50];
-	char id[50];
-	int index,i;
-	line(3);
-	
-	printf("|\tInput Game ID to Delete \t| ");scanf("%s",id);fflush(stdin);
-	
-	index=0, i;
-	while (!feof(file)){
-		fscanf(file,"%[^_]_%[^_]_%[^_]_%[^_]_%[^_]_%[^\n]\n",&dataGame[index].gameName,&dataGame[index].gameId,&dataGame[index].publisher,&dataGame[index].genre,&dataGame[index].price,&dataGame[index].description);
-		fflush(stdin);
-			if(id!=dataGame[index].gameId){
-				index++;
-			}
-	}
-	
-	fclose(file);
-		file=fopen("games.txt","w");
-	fclose(file);
-		file=fopen("games.txt","a");
-	for(i=0;i<index;i++){
-		fprintf(file,"%s_%s_%s_%s_%i_%s\n",dataGame[i].gameName,dataGame[i].gameId,dataGame[i].publisher,dataGame[i].genre,dataGame[i].price,dataGame[i].description);
-	}
-	fclose(file);
-	
-	adminGamesData();
-	
-//	%[^_]_%[^_]_%[^_]_%[^_]_%[^_]_%[^\n]\n
+//	
+//	file=fopen("games.txt", "a+");
+//	Game dataGame[50];
+//	char id[50];
+//	int index,i;
+//	line(3);
+//	
+//	printf("|\tInput Game ID to Delete \t| ");scanf("%s",id);fflush(stdin);
+//	
+//	index=0, i;
+//	while (!feof(file)){
+//		fscanf(file,"%[^_]_%[^_]_%[^_]_%[^_]_%[^_]_%[^\n]\n",&dataGame[index].gameName,&dataGame[index].gameId,&dataGame[index].publisher,&dataGame[index].genre,&dataGame[index].price,&dataGame[index].description);
+//		fflush(stdin);
+//			if(id!=dataGame[index].gameId){
+//				index++;
+//			}
+//	}
+//	
+//	fclose(file);
+//		file=fopen("games.txt","w");
+//	fclose(file);
+//		file=fopen("games.txt","a");
+//	for(i=0;i<index;i++){
+//		fprintf(file,"%s_%s_%s_%s_%i_%s\n",dataGame[i].gameName,dataGame[i].gameId,dataGame[i].publisher,dataGame[i].genre,dataGame[i].price,dataGame[i].description);
+//	}
+//	fclose(file);
+//	
+//	adminGamesData();
+//	
+////	%[^_]_%[^_]_%[^_]_%[^_]_%[^_]_%[^\n]\n
 }
